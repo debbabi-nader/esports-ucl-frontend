@@ -1,27 +1,24 @@
-# UclFrontend
+# Frontend component for the "ESports-UCL" CAS service
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+This frontend component is an Angular project, and it was used in the ['SSO and SLO for Spring Boot and Angular applications with CAS'](https://debbabi-nader.github.io/cas-spring-angular/index.html) blog post.
+Its associated backend component can be found in the [esports-ucl-backend](https://github.com/debbabi-nader/esports-ucl-backend) repository.
 
-## Development server
+## Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The required tools and their respective versions used, at the time the blog post associated to this repository was written:
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Node.js 10.16.0 and NPM 6.9.0
+* Angular CLI 8.0.2
+* Apache Tomcat Server 9.0.22
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+ng build --prod --base-href=/esports/ucl/
+```
 
-## Running unit tests
+## Deployment
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The build of this frontend component, was deployed on an Apache Tomcat server, within the `static` folder of its associated backend component build.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+After a successful deployment, this CAS service should be available at `https://localhost:8443/esports/ucl`.

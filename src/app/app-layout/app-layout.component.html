@@ -1,0 +1,9 @@
+<div class="nav-bar">
+    <span class="nav-item app-logo">ESports UCL</span>
+    <span class="nav-placeholder"></span>
+    <span class="nav-item">{{ user.firstName }} {{ user.lastName }}</span>
+    <span class="nav-item nav-action-item" (click)="onSignOut()">Sign Out</span>
+</div>
+<div class="content-container">
+    <router-outlet></router-outlet>
+</div>

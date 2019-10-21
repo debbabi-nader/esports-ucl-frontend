@@ -1,1 +1,117 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font: 300 1em / 1.5em 'Arial', sans-serif;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    background-image: url('assets/imgs/ucl-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    
+    &:hover, &:focus {
+        color: #FFFFFF;
+        text-decoration: underline;
+    }
+}
+
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    background-color: #041038;
+}
+
+.nav-item {
+    line-height: 39px;
+}
+
+.nav-item+.nav-item {
+    margin-left: 2em;
+}
+
+.nav-action-item {
+    cursor: pointer;
+}
+
+.app-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-placeholder {
+    flex: 1;
+}
+
+.content-container {
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.content-wrapper {
+    width: 40em;
+    margin: auto;
+}
+
+.teams-header {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.teams-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.team-card {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #041038;
+    text-align: center;
+
+    .country, .name {
+        margin: 0;
+    }
+
+    .name {
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+
+    .country {
+        opacity: 0.8;
+    }
+}
+
+.card {
+    display: block;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #041038;
+    text-align: center;
+}
